@@ -150,10 +150,31 @@ figcaption {
   margin-top: 0;
 }
 
-.IndexPage {
+
+main.index {
   display: flex;
+  height: 500px;
 }
 
-.MainNav {
-  display:flex;
+main.index p, main.index nav{
+  flex: 0 0 50%;
+  border: 1px solid black;
+  margin: 0;
+  padding: 0;
+}
+
+main.index ul {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+main.index li {
+  flex: 1;
+  display: flex;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: center;
 }
