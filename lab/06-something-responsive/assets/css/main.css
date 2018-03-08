@@ -1,0 +1,45 @@
+body {
+background-color: lightblue;
+}
+
+
+.bucket {
+width: 200px;
+height: 200px;
+background-color: green;
+position: absolute;
+bottom: 0px;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 1;
+}
+
+
+.ball {
+width: 150px;
+height: 150px;
+-moz-border-radius: 75px;
+-webkit-border-radius: 75px;
+border-radius: 75px;
+background-color: tomato;
+position: absolute;
+bottom: 70%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+
+.ball {
+bottom: 45%;
+}
+
+}
+
+@media (max-width: 480px) {
+
+.ball {
+bottom: 20%;
+}
+
+}
