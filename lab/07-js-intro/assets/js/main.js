@@ -130,3 +130,55 @@ var addNumbers = function(num1, num2){
 
 console.log(addNumbers(8,12));
 console.log(addNumbers(4,12));
+
+// FUNCTIONS AGAIN
+console.log('Functions-');
+
+var squared = function (number) {
+  return number * number
+}
+
+var describeMe = function (me) {
+  return 'My name is ' + me.name + '. I am ' + me.age + ' years old. If you asked me if I am a native New Yorker, my response would be: ' + me.nativeNewYorker
+  + "."
+};
+
+console.log('');
+
+// CONDITIONAL STATEMENTS
+console.log('Conditional Statements -');
+
+if (me.age > 21) {
+  console.log('party time');
+} else if  (me.age < 5) {
+  console.log('why are you here?');
+} else {
+  console.log('no party');
+}
+
+// LOOP
+console.log('');
+var hamburgers = 0;
+for (var i = 0; hamburgers < 10; i++) {
+  console.log(hamburgers + ' hamburger(s)');
+  hamburgers++;
+}
+
+for (var i = 0; i <= 6; i+= 2) {
+  console.log(i);
+}
+
+console.log('How many licks does it take to get to the center of a tootsie pop?')
+
+for (var licks = 1; licks <= 4; licks++) {
+if (licks == 4) {
+  console.log('Crunch!!!')
+} else {
+  console.log(licks)
+}
+}
+
+
+
+
+//
