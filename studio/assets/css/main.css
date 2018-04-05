@@ -1,28 +1,26 @@
 /* GENERAL */
 
 body {
+background-color: black;
 font-family:helvetica;
 font-size: 14px;
+color: white;
 }
 
 h1 {
   font-family:helvetica;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 30px;
 }
 
 /* HOME PAGE */
 
 /* general */
 
-body.homepage {
-  background-color: black;
-}
-
 /* text */
 
 h1.homepage {
-font-size: 30px;
+font-size: 50px;
 color: white;
 text-align: center;
 padding-top: 75px;
@@ -30,14 +28,11 @@ padding-top: 75px;
 
 /* menu */
 
-
-
 img.homepageimg {
   height: 410px;
   width: 270px;
 }
 
-/* use document ready */
 div.scrollmenu2 {
     background-color: black;
     font-size: 16px;
@@ -66,5 +61,36 @@ div.scrollmenu2 a {
   to {
     left: -100%;
     width: 100%;
-  }
+}
+}
+
+/* POST PAGES */
+
+.poster-list.is-active .poster {
+	opacity: 0;
+}
+
+.poster-list.is-active .poster.is-active {
+	opacity: 1;
+}
+
+.poster {
+	height: 200px;
+	width: 150px;
+	background-color: red;
+	display: inline-block;
+}
+
+.highlight:hover {
+	color: yellow;
+}
+
+.description.is-active {
+	color: transparent;
+}
+
+.highlight {
+	color: white;
+  font-size: 20px;
+  font-weight: bold;
 }
