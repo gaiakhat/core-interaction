@@ -1,6 +1,14 @@
-body {
-  font-family: 'Josephin Slab', serif;
+h1 {
+  font-family: 'Modula OT', sans-serif;
   font-size: 150px;
 text-align: center;
 color: rosybrown;
+}
+
+body {
+  font-family: 'Futura', serif;
+font-style: normal;
+font-weight: 400;
+text-align: center;
+font-size: 30px;
 }
