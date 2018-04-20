@@ -12,3 +12,7 @@ font-weight: 400;
 text-align: center;
 font-size: 30px;
 }
+
+.poster {
+  align-items: center;
+}
