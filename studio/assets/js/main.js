@@ -1,104 +1,34 @@
-var description = document.querySelector('.description')
-var posterList = document.querySelector('.poster-list')
+var highlights = Array.from(document.querySelectorAll('.highlight'));
+var posterList = document.querySelector('.poster-list');
+var description = document.querySelector('.description');
 
-// POSTER 1
+highlights.forEach(function(highlight) {
+  var id = highlight.dataset.id;
+  var posterDiv = document.querySelector('.poster-wrapper[data-id=' + id + ']');
+  var infoDiv = document.querySelector('.poster-wrapper[data-id=' + id + '] .info');
 
-var highlight1 = document.querySelector('.highlight.one')
-var poster1 = document.querySelector('.poster.one')
+  fetch('https://www.omdbapi.com/?apikey=6d6fa250&i=' + id)
+    .then(function(response) {
+      // Get the response and format it to JSON
+      return response.json();
+    })
+    .then(function(jsonData) {
+      // log the data
+      // console.log(jsonData);
+      // console.log(jsonData.Year);
+      infoDiv.innerText = jsonData.Year;
+    });
 
-highlight1.addEventListener('mouseover', function() {
-	description.classList.add('is-active')
-	posterList.classList.add('is-active')
-	poster1.classList.add('is-active')
-})
+  highlight.addEventListener('mouseover', function() {
+    description.classList.add('is-active');
+    posterList.classList.add('is-active');
+  	posterDiv.classList.add('is-active');
+  })
 
-highlight1.addEventListener('mouseout', function() {
-	description.classList.remove('is-active')
-	posterList.classList.remove('is-active')
-	poster1.classList.remove('is-active')
-})
+  highlight.addEventListener('mouseout', function() {
+    description.classList.remove('is-active');
+    posterList.classList.remove('is-active');
+  	posterDiv.classList.remove('is-active');
+  })
 
-// POSTER 2
-
-var highlight2 = document.querySelector('.highlight.two')
-var poster2 = document.querySelector('.poster.two')
-
-highlight2.addEventListener('mouseover', function() {
-	description.classList.add('is-active')
-	posterList.classList.add('is-active')
-	poster2.classList.add('is-active')
-})
-
-highlight2.addEventListener('mouseout', function() {
-	description.classList.remove('is-active')
-	posterList.classList.remove('is-active')
-	poster2.classList.remove('is-active')
-})
-
-// POSTER 3
-
-var highlight3 = document.querySelector('.highlight.three')
-var poster3 = document.querySelector('.poster.three')
-
-highlight3.addEventListener('mouseover', function() {
-	description.classList.add('is-active')
-	posterList.classList.add('is-active')
-	poster3.classList.add('is-active')
-})
-
-highlight3.addEventListener('mouseout', function() {
-	description.classList.remove('is-active')
-	posterList.classList.remove('is-active')
-	poster3.classList.remove('is-active')
-})
-
-// POSTER 4
-
-var highlight4 = document.querySelector('.highlight.four')
-var poster4 = document.querySelector('.poster.four')
-
-highlight4.addEventListener('mouseover', function() {
-	description.classList.add('is-active')
-	posterList.classList.add('is-active')
-	poster4.classList.add('is-active')
-})
-
-highlight4.addEventListener('mouseout', function() {
-	description.classList.remove('is-active')
-	posterList.classList.remove('is-active')
-	poster4.classList.remove('is-active')
-})
-
-// POSTER 5
-
-var highlight5 = document.querySelector('.highlight.five')
-var poster5 = document.querySelector('.poster.five')
-
-highlight5.addEventListener('mouseover', function() {
-	description.classList.add('is-active')
-	posterList.classList.add('is-active')
-	poster5.classList.add('is-active')
-})
-
-highlight5.addEventListener('mouseout', function() {
-	description.classList.remove('is-active')
-	posterList.classList.remove('is-active')
-	poster5.classList.remove('is-active')
-})
-
-// POSTER 6
-
-var highlight6 = document.querySelector('.highlight.six')
-var poster6 = document.querySelector('.poster.six')
-
-highlight6.addEventListener('mouseover', function() {
-	description.classList.add('is-active')
-	posterList.classList.add('is-active')
-	poster6.classList.add('is-active')
-})
-
-highlight6.addEventListener('mouseout', function() {
-	description.classList.remove('is-active')
-	posterList.classList.remove('is-active')
-	poster6.classList.remove('is-active')
 })
