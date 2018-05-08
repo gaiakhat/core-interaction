@@ -14,21 +14,22 @@ highlights.forEach(function(highlight) {
     })
     .then(function(jsonData) {
       // log the data
-      // console.log(jsonData);
+       // console.log(jsonData);
       // console.log(jsonData.Year);
-      infoDiv.innerText = jsonData.Year;
+     infoDiv.innerText = jsonData.Year;
+
     });
 
   highlight.addEventListener('mouseover', function() {
     description.classList.add('is-active');
     posterList.classList.add('is-active');
-  	posterDiv.classList.add('is-active');
+  	posterDiv.classList.add('is-active'); //
   })
 
   highlight.addEventListener('mouseout', function() {
     description.classList.remove('is-active');
     posterList.classList.remove('is-active');
-  	posterDiv.classList.remove('is-active');
+  	posterDiv.classList.remove('is-active'); //
   })
 
 })

@@ -6,7 +6,7 @@ font-family:'Libre Franklin';
 font-size: 16px;
 color: white;
 text-align: center;
-line-height: 26px;
+line-height: 27px;
 }
 
 h1 {
@@ -25,14 +25,15 @@ h1.homepage {
 font-size: 50px;
 color: white;
 text-align: center;
-padding-top: 75px;
+padding-top: 70px;
 }
+
 
 /* menu */
 
 img.homepageimg {
   height: 410px;
-  width: 270px;
+  /* width: 270px; */
 }
 
 div.scrollmenu {
@@ -44,6 +45,7 @@ div.scrollmenu {
     display: flex;
     position: absolute;
     animation: move 11s linear infinite;
+    padding: 70px;
 }
 
 div.scrollmenu a {
@@ -52,6 +54,10 @@ div.scrollmenu a {
     text-align: center;
     margin: 20px;
     text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  color: yellow;
 }
 
 @keyframes move {
@@ -68,12 +74,12 @@ div.scrollmenu a {
 /* POST PAGES */
 
 h1.post {
-  padding-top: 40px;
+  padding-top: 35px;
   padding-bottom: 0px;
 }
 
 div.poster-list {
-  padding: 30px;
+  display:inline-flex;
 }
 
 
@@ -100,11 +106,9 @@ div.poster-list {
 
 .poster {
 	height: 307.5px;
-	width: 202.5px;
+	/* width: 202.5px; */
 	align-content: center;
   padding: 5px;
-  padding-top: 30px;
-  padding-bottom: 30px;
 }
 
 .highlight:hover {
@@ -117,13 +121,43 @@ div.poster-list {
 
 .highlight {
 	color: white;
-  font-size: 20px;
+  font-size: 26px;
   font-weight: bold;
 }
  p {
-   max-width: 45em;
+   max-width: 47em;
    margin: auto;
    text-align: left;
+ }
+
+ p.description {
+   padding: 40px;
+ }
+
+ .back {
+   padding: 40px;
+   padding-top: 100px;
+   text-decoration: none;
+   color: inherit;
+ }
+
+ .back:hover{
+   color: yellow;
+ }
+
+ a.weblink {
+   color: white;
+   border-bottom: 2px solid;
+   text-decoration: none;
+ }
+
+ a.weblink:hover {
+   color: yellow;
+ }
+
+ .info {
+   font-weight: bold;
+   font-size: 14px;
  }
 
 @media (max-width: 615px) {
