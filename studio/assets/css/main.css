@@ -119,6 +119,10 @@ div.poster-list {
 	color: transparent;
 }
 
+.description.is-active .highlight:hover {
+  opacity: 1;
+}
+
 .highlight {
 	color: white;
   font-size: 26px;
