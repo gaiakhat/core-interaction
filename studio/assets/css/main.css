@@ -215,6 +215,10 @@ body {
   align-content: center;
 }
 
+img.poster {
+  height: 30px;
+}
+
 }
 @media (max-width: 500px) {
 
@@ -236,5 +240,9 @@ body {
   div.poster-list {
     height: 35px;
 display: inline-block;
+  }
+
+  img.poster {
+    height: 30px;
   }
 }
