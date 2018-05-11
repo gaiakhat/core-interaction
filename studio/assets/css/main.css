@@ -170,9 +170,9 @@ height: 100%;
 
   h1.homepage {
   font-size: 30px;
-  text-align: center;
+  /* text-align: center;
   padding-top: 75px;
-  }
+} */}
 
 h1.description {
   font-size: 50px;
@@ -183,7 +183,7 @@ h1.description {
       font-size: 20px;
       overflow: visible;
       /* width: 100%; */
-      height: 500px;
+      height: 250px;
       display: flex;
       position: absolute;
       animation: move 8s linear infinite;
@@ -197,7 +197,7 @@ h1.description {
   display: inline-block;
   }
 div.poster-list{
-  height: 50px;
+  height: 40px;
 display: inline-block;
 }
 
@@ -233,7 +233,7 @@ body {
 }
 
   div.poster-list {
-    height: 50px;
+    height: 40px;
 display: inline-block;
   }
 }
