@@ -169,8 +169,7 @@ height: 100%;
 @media (max-width: 615px) {
 
   h1.homepage {
-  font-size: 50px;
-  color: white;
+  font-size: 30px;
   text-align: center;
   padding-top: 75px;
   }
@@ -183,7 +182,7 @@ h1.description {
       background-color: black;
       font-size: 20px;
       overflow: visible;
-      width: 100%;
+      /* width: 100%; */
       height: 500px;
       display: flex;
       position: absolute;
@@ -198,7 +197,7 @@ h1.description {
   display: inline-block;
   }
 div.poster-list{
-  height: 5px;
+  height: 50px;
 display: inline-block;
 }
 
@@ -214,17 +213,13 @@ html {
 body {
   align-content: center;
 }
-img.homepageimg {
-  height: 40px;
-}
+
 }
 @media (max-width: 500px) {
 
   h1.homepage {
   font-size: 30px;
   color: white;
-  text-align: center;
-  padding-top: 75px;
   }
   p {
     width: 100%;
@@ -238,7 +233,7 @@ body {
 }
 
   div.poster-list {
-    height: 40px;
+    height: 50px;
 display: inline-block;
   }
 }
