@@ -206,16 +206,12 @@ div.back {
   padding-top: 30px;
 }
 
-html {
-  width: 100%;
-  align-items: center;
-}
 body {
   align-content: center;
 }
 
 img.poster {
-  height: 100px;
+  height: 300px;
 }
 
 }
@@ -247,6 +243,6 @@ display: inline-block;
   }
 
   img.poster {
-    height: 100px;
+    height: 350px;
   }
 }
