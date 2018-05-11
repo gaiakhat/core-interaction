@@ -186,7 +186,7 @@ h1.description {
       height: 250px;
       display: flex;
       position: absolute;
-      animation: move 8s linear infinite;
+      animation: move 0s linear infinite;
   }
 
    p.description {
