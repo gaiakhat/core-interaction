@@ -170,9 +170,10 @@ height: 100%;
 
   h1.homepage {
   font-size: 30px;
-  /* text-align: center;
+  text-align: center;
   padding-top: 75px;
-} */}
+  line-height: normal;
+}
 
 h1.description {
   font-size: 50px;
@@ -197,7 +198,7 @@ h1.description {
   display: inline-block;
   }
 div.poster-list{
-  height: 40px;
+  height: 35px;
 display: inline-block;
 }
 
@@ -233,7 +234,7 @@ body {
 }
 
   div.poster-list {
-    height: 40px;
+    height: 35px;
 display: inline-block;
   }
 }
